@@ -43,18 +43,18 @@ header {
 }
 
 .bs-description h3{
-   font-size:30px;
-   margin-bottom:20px;
+   font-size:35px;
+   margin-bottom:10px;
    margin-top:0px;
    font-family:"Raleway";
-   font-weight:200;
+   font-weight:600;
    color:#1c1c1c;   	
 }
 
 .bs-description p{
    font-family:"Raleway";
-   font-size:14px;
-   margin-bottom:6px;
+   font-size:20px;
+   margin-bottom:10px;
    margin-top:0px; 	
 }
 
