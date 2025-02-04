@@ -4,12 +4,16 @@
   header {
     flex-direction: column; /* Susun elemen secara vertikal */
     text-align: center;
-    padding: 10px;
     -webkit-transform: translateX(-50%);
    transform: translateX(-50%); 
   }
 
-  .logo, .logo2 {
+  .logo
+	{
+		height: 50px; /* Sesuaikan ukuran logo */
+  margin-left: 50px;
+  margin-right: 90px; /* Beri jarak dari teks */
+		.logo2 {
     height: 70px; /* Kurangi ukuran logo */
     margin: 5px auto;
     -webkit-transform: translateX(-50%);
