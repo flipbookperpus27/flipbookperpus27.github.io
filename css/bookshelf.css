@@ -8,7 +8,9 @@
     -webkit-transform: scale(0.95); /* Sedikit diperkecil */
        
   }
-
+ .logo, .logo2 {
+        height: 70px; /* Perkecil logo */
+    }
   
   
 
