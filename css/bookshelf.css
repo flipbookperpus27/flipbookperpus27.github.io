@@ -12,17 +12,21 @@ header {
   align-items: center; /* Menyamakan tinggi elemen */
   z-index: 1000; /* Agar tetap di atas konten lain */
   border-bottom: 3px solid #000;
+  -webkit-transform: translateZ(0); /* Mencegah glitch pada tampilan mobile */
 }
 
 .logo {
   height: 100px; /* Sesuaikan ukuran logo */
   margin-left: 100px;
   margin-right: 290px; /* Beri jarak dari teks */
+  -webkit-transform: scale(1); /* Pastikan logo tampil dengan skala yang sesuai */
 }
+
 .logo2 {
   height: 100px; /* Sesuaikan ukuran logo */
   margin-left: 290px;
   margin-right: 100px; /* Beri jarak dari teks */
+  -webkit-transform: scale(1); /* Menjaga skala di perangkat berbeda */
 }
 
 .bs-container {	
@@ -33,7 +37,39 @@ header {
   margin-bottom:0px;
   margin-top: 200px;
   text-align:center;  
+  -webkit-transform: translateZ(0); /* Memastikan tampilan tetap optimal di semua perangkat */
 }
+
+/* Media queries untuk menyesuaikan tampilan di perangkat seluler dan tablet */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column; /* Menyesuaikan tata letak header */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo, .logo2 {
+    height: 80px; /* Sesuaikan ukuran logo untuk layar kecil */
+    margin: 10px auto;
+  }
+
+  .bs-container {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo, .logo2 {
+    height: 60px; /* Perkecil logo di layar lebih kecil */
+  }
+
+  .bs-container {
+    margin-top: 120px;
+  }
+}
+
 
 /* Description for BookShelf /*/
 
