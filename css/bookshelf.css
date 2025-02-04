@@ -1,3 +1,4 @@
+/* Container for BookShelf /*/
 header {
   background-color: #FFFFFF;
   padding: 15px;
@@ -11,14 +12,12 @@ header {
   align-items: center; /* Menyamakan tinggi elemen */
   z-index: 1000; /* Agar tetap di atas konten lain */
   border-bottom: 3px solid #000;
-	flex-wrap: wrap;
 }
 
 .logo {
   height: 100px; /* Sesuaikan ukuran logo */
   margin-left: 100px;
   margin-right: 290px; /* Beri jarak dari teks */
-	max-width: 100%
 }
 .logo2 {
   height: 100px; /* Sesuaikan ukuran logo */
@@ -34,34 +33,8 @@ header {
   margin-bottom:0px;
   margin-top: 200px;
   text-align:center;  
-	max-width: 100%
 }
 
-@media (max-width: 768px) {
-    .logo {
-        height: 80px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .logo2 {
-        height: 80px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .bs-container {
-        max-width: 100%;
-        padding: 10px;
-        margin-top: 100px;
-    }
-    .bs-shelf-image {
-        width: 100px;
-    }
-}
-.bs-description h3{
-   font-size:10px;
-.bs-description p{
-
-   font-size:10px;
 /* Description for BookShelf /*/
 
 .bs-description{
