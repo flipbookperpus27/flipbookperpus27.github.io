@@ -57,7 +57,11 @@ header {
         width: 100px;
     }
 }
+.bs-description h3{
+   font-size:10px;
+.bs-description p{
 
+   font-size:10px;
 /* Description for BookShelf /*/
 
 .bs-description{
