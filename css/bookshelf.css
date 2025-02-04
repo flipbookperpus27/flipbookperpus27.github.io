@@ -6,15 +6,11 @@
     text-align: center;
     padding: 10px;
     -webkit-transform: scale(0.95); /* Sedikit diperkecil */
-        flex-wrap: wrap; /* Izinkan elemen berpindah baris jika terlalu sempit */
-        justify-content: center; 
+       
   }
 
-  .logo, .logo2 {
-    height: 70px; /* Kurangi ukuran logo */
-    margin: 5px auto;
-    -webkit-transform: translateY(-5px); /* Naikkan sedikit */
-  }
+  
+  
 
   .bs-description {
     -webkit-transform: scale(0.9); /* Perkecil ukuran teks */
