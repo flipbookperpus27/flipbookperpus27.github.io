@@ -1,30 +1,36 @@
 /* Container for BookShelf /*/
-/* Responsif untuk tampilan mobile */
+/* Header: Tampilan default untuk desktop dan tablet */
+header {
+    display: flex; /* Gunakan Flexbox */
+    justify-content: space-between; /* Logo di kiri dan kanan */
+    align-items: center; /* Pusatkan vertikal */
+    padding: 10px 20px;
+}
+
+/* Elemen di dalam header */
+.logo, .logo2 {
+    height: 80px; /* Sesuaikan ukuran logo */
+}
+
+.bs-description {
+    flex: 1; /* Isi ruang di antara logo */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Responsif untuk layar kecil (mobile) */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column; /* Susun elemen secara vertikal */
-    text-align: center;
-    padding: 10px;
-    -webkit-transform: scale(0.95); /* Sedikit diperkecil */
-       
-  }
- .logo, .logo2 {
+    header {
+        flex-wrap: wrap; /* Izinkan elemen berpindah baris jika terlalu sempit */
+        justify-content: center; /* Pusatkan semua elemen */
+    }
+
+    .logo, .logo2 {
         height: 70px; /* Perkecil logo */
     }
-  
-  
 
-  .bs-description {
-    -webkit-transform: scale(0.9); /* Perkecil ukuran teks */
-  }
-
-  .bs-description h3 {
-    font-size: 24px;
-  }
-
-  .bs-description p {
-    font-size: 16px;
-  }
+    .bs-description {
+        margin: 10px 0; /* Beri jarak atas-bawah */
+    }
 }
 
 header {
