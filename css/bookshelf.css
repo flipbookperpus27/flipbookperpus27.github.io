@@ -1,4 +1,26 @@
 /* Container for BookShelf /*/
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Elemen ditampilkan vertikal */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo, .logo2 {
+    height: 70px; /* Kurangi ukuran logo */
+    margin: 10px auto; /* Posisikan di tengah */
+  }
+
+  .bs-description h3 {
+    font-size: 24px; /* Kurangi ukuran teks */
+  }
+
+  .bs-description p {
+    font-size: 16px;
+  }
+}
+
 header {
   background-color: #FFFFFF;
   padding: 15px;
