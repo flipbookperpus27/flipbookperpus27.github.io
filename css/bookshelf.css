@@ -5,17 +5,20 @@
     flex-direction: column; /* Susun elemen secara vertikal */
     text-align: center;
     padding: 10px;
-    -webkit-transform: scale(0.95); /* Sedikit diperkecil */
+    -webkit-transform: translateX(-50%);
+   transform: translateX(-50%); 
   }
 
   .logo, .logo2 {
     height: 70px; /* Kurangi ukuran logo */
     margin: 5px auto;
-    -webkit-transform: translateY(-5px); /* Naikkan sedikit */
+    -webkit-transform: translateX(-50%);
+   transform: translateX(-50%); 
   }
 
   .bs-description {
-    -webkit-transform: scale(0.9); /* Perkecil ukuran teks */
+    -webkit-transform: translateX(-50%);
+   transform: translateX(-50%); 
   }
 
   .bs-description h3 {
