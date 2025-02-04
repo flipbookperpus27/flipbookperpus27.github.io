@@ -2,18 +2,24 @@
 /* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Elemen ditampilkan vertikal */
+    flex-direction: column; /* Susun elemen secara vertikal */
     text-align: center;
     padding: 10px;
+    -webkit-transform: scale(0.95); /* Sedikit diperkecil */
   }
 
   .logo, .logo2 {
     height: 70px; /* Kurangi ukuran logo */
-    margin: 10px auto; /* Posisikan di tengah */
+    margin: 5px auto;
+    -webkit-transform: translateY(-5px); /* Naikkan sedikit */
+  }
+
+  .bs-description {
+    -webkit-transform: scale(0.9); /* Perkecil ukuran teks */
   }
 
   .bs-description h3 {
-    font-size: 24px; /* Kurangi ukuran teks */
+    font-size: 24px;
   }
 
   .bs-description p {
