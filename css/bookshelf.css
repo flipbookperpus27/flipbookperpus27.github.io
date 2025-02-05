@@ -1,4 +1,4 @@
-/* Container for BookShelf /*/
+/* Header utama */
 header {
   background-color: #FFFFFF;
   padding: 15px;
@@ -10,36 +10,38 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; /* Memusatkan isi header */
+  justify-content: space-between; /* Pastikan logo tetap di kiri dan kanan */
   z-index: 1000;
   border-bottom: 3px solid #000;
+  max-width: 1000px; /* Batasi lebar agar tidak terlalu melebar */
 }
 
-.logo {
-  height: 100px;
-  margin-right: 20px; /* Memberi jarak antara logo dan teks */
+/* Container agar konten tetap rapi */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.logo2 {
-  height: 100px;
-  margin-left: 20px; /* Memberi jarak antara teks dan logo */
+/* Logo */
+.logo, .logo2 {
+  height: 80px;
+  flex-shrink: 0; /* Jangan biarkan logo mengecil sendiri */
 }
 
-.bs-description {
+/* Teks tengah */
+.header-text {
   text-align: center;
+  flex-grow: 1; /* Pastikan teks mengambil ruang di tengah */
 }
 
-
-.bs-container {	
-  max-width: 800px;
-  margin: 0 auto;
-  background:#FFFFFF;	
-  overflow:hidden;
-  margin-bottom:0px;
-  margin-top: 200px;
-  text-align:center;  
+/* Pastikan bookshelf tidak tertutup header */
+.bs-container {
+  margin-top: 150px; /* Tambahkan margin agar tidak tertutup header */
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   header {
     flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
@@ -64,6 +66,7 @@ header {
     margin-top: 120px;
   }
 }
+
 /* Description for BookShelf /*/
 
 .bs-description{
