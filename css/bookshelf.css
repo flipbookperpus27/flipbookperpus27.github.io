@@ -40,31 +40,6 @@ header {
   text-align:center;  
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column; /* Susun vertikal di HP */
-    text-align: center;
-    padding: 10px;
-  }
-
-  .logo, .logo2 {
-    height: 80px; /* Sesuaikan ukuran logo */
-    margin: 5px 0;
-  }
-
-  .header-text h1 {
-    font-size: 20px; /* Ukuran font lebih kecil */
-  }
-
-  .header-text p {
-    font-size: 14px;
-  }
-}
-  /* Sesuaikan bookshelf agar tidak tertutup header */
-  .bs-container {
-    margin-top: 100px;
-  }
-}
 /* Description for BookShelf /*/
 
 .bs-description{
