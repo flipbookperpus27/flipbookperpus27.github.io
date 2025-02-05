@@ -3,27 +3,32 @@ header {
   background-color: #FFFFFF;
   padding: 15px;
   font-family: Arial, sans-serif;
-  position: fixed; /* Menjadikan header tetap di atas */
-  top: 0; /* Menempel di bagian atas */
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  display: flex; /* Mengatur isi header dalam baris */
-  align-items: center; /* Menyamakan tinggi elemen */
-  z-index: 1000; /* Agar tetap di atas konten lain */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Memusatkan isi header */
+  z-index: 1000;
   border-bottom: 3px solid #000;
 }
 
 .logo {
-  height: 100px; /* Sesuaikan ukuran logo */
-  margin-left: 100px;
-  margin-right: 290px; /* Beri jarak dari teks */
+  height: 100px;
+  margin-right: 20px; /* Memberi jarak antara logo dan teks */
 }
+
 .logo2 {
-  height: 100px; /* Sesuaikan ukuran logo */
-  margin-left: 290px;
-  margin-right: 100px; /* Beri jarak dari teks */
+  height: 100px;
+  margin-left: 20px; /* Memberi jarak antara teks dan logo */
 }
+
+.bs-description {
+  text-align: center;
+}
+
 
 .bs-container {	
   max-width: 800px;
