@@ -42,23 +42,24 @@ header {
 
 @media (max-width: 768px) {
   header {
-    flex-wrap: wrap; /* Agar elemen tetap dalam satu baris */
+    flex-direction: column; /* Susun vertikal di HP */
+    text-align: center;
     padding: 10px;
   }
 
   .logo, .logo2 {
-    height: 60px; /* Ukuran logo lebih kecil agar muat di HP */
-    margin: 0 5px; /* Kurangi jarak antar elemen */
+    height: 80px; /* Sesuaikan ukuran logo */
+    margin: 5px 0;
   }
 
   .header-text h1 {
-    font-size: 18px; /* Ukuran teks lebih kecil di HP */
+    font-size: 20px; /* Ukuran font lebih kecil */
   }
 
   .header-text p {
-    font-size: 12px;
+    font-size: 14px;
   }
-
+}
   /* Sesuaikan bookshelf agar tidak tertutup header */
   .bs-container {
     margin-top: 100px;
