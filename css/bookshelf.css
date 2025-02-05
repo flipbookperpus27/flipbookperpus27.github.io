@@ -1,4 +1,4 @@
-/* Header utama */
+/* Container for BookShelf /*/
 header {
   background-color: #FFFFFF;
   padding: 15px;
@@ -10,63 +10,60 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Pastikan logo tetap di kiri dan kanan */
+  justify-content: center; /* Memusatkan isi header */
   z-index: 1000;
   border-bottom: 3px solid #000;
-  max-width: 1000px; /* Batasi lebar agar tidak terlalu melebar */
 }
 
-/* Container agar konten tetap rapi */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+.logo {
+  height: 100px;
+  margin-right: 20px; /* Memberi jarak antara logo dan teks */
 }
 
-/* Logo */
-.logo, .logo2 {
-  height: 80px;
-  flex-shrink: 0; /* Jangan biarkan logo mengecil sendiri */
+.logo2 {
+  height: 100px;
+  margin-left: 20px; /* Memberi jarak antara teks dan logo */
 }
 
-/* Teks tengah */
-.header-text {
+.bs-description {
   text-align: center;
-  flex-grow: 1; /* Pastikan teks mengambil ruang di tengah */
 }
 
-/* Pastikan bookshelf tidak tertutup header */
-.bs-container {
-  margin-top: 150px; /* Tambahkan margin agar tidak tertutup header */
+
+.bs-container {	
+  max-width: 800px;
+  margin: 0 auto;
+  background:#FFFFFF;	
+  overflow:hidden;
+  margin-bottom:0px;
+  margin-top: 200px;
+  text-align:center;  
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   header {
-    flex-wrap: nowrap; /* Pastikan elemen tetap dalam satu baris */
+    flex-wrap: wrap; /* Agar elemen tetap dalam satu baris */
     padding: 10px;
-    width: 100%;
   }
 
   .logo, .logo2 {
-    height: 50px; /* Perkecil logo agar muat */
+    height: 60px; /* Ukuran logo lebih kecil agar muat di HP */
+    margin: 0 5px; /* Kurangi jarak antar elemen */
   }
 
   .header-text h1 {
-    font-size: 16px; /* Ukuran teks lebih kecil */
+    font-size: 18px; /* Ukuran teks lebih kecil di HP */
   }
 
   .header-text p {
     font-size: 12px;
   }
 
-  /* Pastikan bookshelf tidak tertutup */
+  /* Sesuaikan bookshelf agar tidak tertutup header */
   .bs-container {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
-
 /* Description for BookShelf /*/
 
 .bs-description{
