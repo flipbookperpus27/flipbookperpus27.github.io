@@ -42,22 +42,26 @@ header {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Susun vertikal di HP */
-    text-align: center;
+    flex-wrap: wrap; /* Agar elemen tetap dalam satu baris */
     padding: 10px;
   }
 
   .logo, .logo2 {
-    height: 80px; /* Sesuaikan ukuran logo */
-    margin: 5px 0;
+    height: 60px; /* Ukuran logo lebih kecil agar muat di HP */
+    margin: 0 5px; /* Kurangi jarak antar elemen */
   }
 
   .header-text h1 {
-    font-size: 20px; /* Ukuran font lebih kecil */
+    font-size: 18px; /* Ukuran teks lebih kecil di HP */
   }
 
   .header-text p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  /* Sesuaikan bookshelf agar tidak tertutup header */
+  .bs-container {
+    margin-top: 100px;
   }
 }
 /* Description for BookShelf /*/
