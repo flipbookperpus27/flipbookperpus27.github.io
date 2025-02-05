@@ -1,5 +1,4 @@
 /* Container for BookShelf /*/
-/* Header utama */
 header {
   background-color: #FFFFFF;
   padding: 15px;
@@ -11,23 +10,36 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Memusatkan isi header */
   z-index: 1000;
   border-bottom: 3px solid #000;
 }
 
-/* Logo */
-.logo, .logo2 {
+.logo {
   height: 100px;
-  margin: 0 20px; /* Jarak antara logo dan teks */
+  margin-right: 20px; /* Memberi jarak antara logo dan teks */
 }
 
-/* Teks tengah */
-.header-text {
+.logo2 {
+  height: 100px;
+  margin-left: 20px; /* Memberi jarak antara teks dan logo */
+}
+
+.bs-description {
   text-align: center;
 }
 
-/* Versi Mobile */
+
+.bs-container {	
+  max-width: 800px;
+  margin: 0 auto;
+  background:#FFFFFF;	
+  overflow:hidden;
+  margin-bottom:0px;
+  margin-top: 200px;
+  text-align:center;  
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column; /* Susun vertikal di HP */
@@ -48,7 +60,6 @@ header {
     font-size: 14px;
   }
 }
-
   /* Sesuaikan bookshelf agar tidak tertutup header */
   .bs-container {
     margin-top: 100px;
